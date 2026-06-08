@@ -136,20 +136,9 @@ export const useExpenses = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      try {
-        setExpenses(JSON.parse(stored));
-      } catch {
-        const sampleData = generateSampleData();
-        setExpenses(sampleData);
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(sampleData));
-      }
-    } else {
-      const sampleData = generateSampleData();
-      setExpenses(sampleData);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(sampleData));
-    }
+    // Always use fixed sample data for consistency across all deployments
+    const sampleData = generateSampleData();
+    setExpenses(sampleData);
     setIsLoading(false);
   }, []);
 
