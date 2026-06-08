@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 
 const Statistics = () => {
   const { expenses, isLoading } = useExpenses();
-  const [selectedMonth, setSelectedMonth] = useState(new Date());
+  const [selectedMonth, setSelectedMonth] = useState(new Date('2025-12-01'));
 
   const monthExpenses = useMemo(() => {
     const start = startOfMonth(selectedMonth);
