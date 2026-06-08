@@ -37,4 +37,4 @@ Error generating stack: `+u.message+`
 				<p style="margin-top:12px;color:#444">Ouvre la console du navigateur (F12) pour voir les détails.</p>
 			</div>
 		</div>
-	`,console.error("App mounting error:",e)},tc=document.getElementById("root");if(!tc)throw new Error("Root element not found");console.log("App: starting dynamic import");oc(()=>import("./App-vVOOcU28.js").then(e=>e.A),[]).then(e=>{const t=e.default;try{Ld(tc).render(t&&t())}catch(n){Bi(n)}}).catch(e=>{Bi(e)});export{Ec as R,oc as _,ba as a,Od as b,Rd as c,Td as d,Hi as g,Uu as r};
+	`,console.error("App mounting error:",e)},tc=document.getElementById("root");if(!tc)throw new Error("Root element not found");console.log("App: starting dynamic import");oc(()=>import("./App-DZYhCCoG.js").then(e=>e.A),[]).then(e=>{const t=e.default;try{Ld(tc).render(t&&t())}catch(n){Bi(n)}}).catch(e=>{Bi(e)});export{Ec as R,oc as _,ba as a,Od as b,Rd as c,Td as d,Hi as g,Uu as r};
